@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #020202;
+    width: 90vw;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.blog img{
+    width: 100%;
+    display: block;
+}
+
+.blog{
+    margin: 50px 0;
+}
+
+.blog h2{
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.blog h1{
+    text-align: center;
+    padding: 5px 0 35px;
+}
+
+.blog-item{
+    position: relative;
+    margin: 40px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.blog-text h3{
+    font-size: 22px;
+    text-shadow: 0 0 4px #000;
+    border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 10px;
+}
+
+.blog-text p{
+    padding: 10px 0;
+    text-shadow: 0 0 1px #000;
+}
+
+.blog-item img{
+    transition: transform 1s ease;
+}
+
+.blog-item img:hover{
+    transform: scale(1.1);
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-item{
+    flex: 0 0 calc(33.3333% - 20px);
+    margin: 10px;
+}
+
+@media(max-width: 1370px){
+    .blog-item{
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media(max-width: 992px){
+    .blog-item{
+        flex: 0 0 100%;
+    }
+}
